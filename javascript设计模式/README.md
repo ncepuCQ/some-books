@@ -13,8 +13,9 @@
   const construct = '构造函数';
   instance.__proto__ == construct.prototype; // true
   // 极端例子
-  Function.prototype.__proto__ == Object.prototype; // true
-  Object.prototype.__proto__ == null; // true
+  // 1. Function.prototype 为函数对象
+  /* 2. */Function.prototype.__proto__ == Object.prototype; // true
+  /* 3. */Object.prototype.__proto__ == null; // true
 ```
 ## 第二章 | 继承
 * instanceof 的工作原理
