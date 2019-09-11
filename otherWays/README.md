@@ -30,3 +30,8 @@
   console.log(player);
   // ReferenceError: player is not defined
 ```
+
+## 使用dom函数时一定要注意各个浏览器的兼容 | scrollLeft
+```js
+  const necessary = 'https://caniuse.com/'
+```
