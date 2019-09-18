@@ -33,5 +33,17 @@
 
 ## 使用dom函数时一定要注意各个浏览器的兼容 | scrollLeft
 ```js
+  // canvas api: ctx = canvas.getContext('2d'), ctx.setLineDash()
   const necessary = 'https://caniuse.com/'
+  // 获取当前元素的具体样式 兼容性最广的是 element.getBoundingClientRect() ==> { left, top, right, bottom }
+```
+* 使用 多行文本溢出 时会出现元素高度减少2px，因此最好添加固定宽度
+```
+  span {
+    overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  }
 ```
